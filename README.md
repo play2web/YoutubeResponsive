@@ -5,10 +5,10 @@ YouTube video to re-size depending on the browser size or device width. However,
 
 The fix was actually quite simple. Here’s how to make a youtube video mobile:
 
--1.Install via Package Management.
--2.Create TV with your desired name, and assign to template that you want to appear.
--3. Call it in your template like this
+- 1.Install via Package Management.
+- 2.Create TV with your desired name, and assign to template that you want to appear.
+- 3. Call it in your template like this
 
   [[!Youtube? &link=`[[*your_tv_name]`]]
   
--4. Thats it, enjoy :)
+- 4. Thats it, enjoy :)
