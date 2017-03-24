@@ -1,0 +1,60 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      '113ea88396fc35336c7a1f1d777209ec' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":74,"source":1,"property_preprocess":0,"name":"Youtube","description":"Insert responsive youtube iframe ","editor_type":0,"category":43,"cache_type":0,"snippet":"function get_youtube_id_from_url($url)\\n{\\n  if (stristr($url,\'youtu.be\\/\'))\\n  {preg_match(\'\\/(https:|http:|)(\\\\\\/\\\\\\/www\\\\.|\\\\\\/\\\\\\/|)(.*?)\\\\\\/(.{11})\\/i\', $url, $final_ID); return $final_ID[4]; }\\n  else \\n  {@preg_match(\'\\/(https:|http:|):(\\\\\\/\\\\\\/www\\\\.|\\\\\\/\\\\\\/|)(.*?)\\\\\\/(embed\\\\\\/|watch.*?v=|)([a-z_A-Z0-9\\\\-]{11})\\/i\', $url, $IDD); return $IDD[5]; }\\n}\\n\\n$modx->regClientStartupHTMLBlock(\'\\n<style>\\n.video-container {\\nposition: relative;\\npadding-bottom: 56.25%;\\npadding-top: 30px; height: 0; overflow: hidden;\\n}\\n\\n.video-container iframe,\\n.video-container object,\\n.video-container embed {\\nposition: absolute;\\ntop: 0;\\nleft: 0;\\nwidth: 100%;\\nheight: 100%;\\n}\\n<\\/style>\');\\n\\n$youtube = get_youtube_id_from_url($link);\\n\\necho \'<div class=\\"video-container\\"><iframe width=\\"560\\" height=\\"315\\" src=\\"https:\\/\\/www.youtube.com\\/embed\\/\'.$youtube.\'\\" frameborder=\\"0\\" allowfullscreen><\\/iframe><\\/div>\';","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"function get_youtube_id_from_url($url)\\n{\\n  if (stristr($url,\'youtu.be\\/\'))\\n  {preg_match(\'\\/(https:|http:|)(\\\\\\/\\\\\\/www\\\\.|\\\\\\/\\\\\\/|)(.*?)\\\\\\/(.{11})\\/i\', $url, $final_ID); return $final_ID[4]; }\\n  else \\n  {@preg_match(\'\\/(https:|http:|):(\\\\\\/\\\\\\/www\\\\.|\\\\\\/\\\\\\/|)(.*?)\\\\\\/(embed\\\\\\/|watch.*?v=|)([a-z_A-Z0-9\\\\-]{11})\\/i\', $url, $IDD); return $IDD[5]; }\\n}\\n\\n$modx->regClientStartupHTMLBlock(\'\\n<style>\\n.video-container {\\nposition: relative;\\npadding-bottom: 56.25%;\\npadding-top: 30px; height: 0; overflow: hidden;\\n}\\n\\n.video-container iframe,\\n.video-container object,\\n.video-container embed {\\nposition: absolute;\\ntop: 0;\\nleft: 0;\\nwidth: 100%;\\nheight: 100%;\\n}\\n<\\/style>\');\\n\\n$youtube = get_youtube_id_from_url($link);\\n\\necho \'<div class=\\"video-container\\"><iframe width=\\"560\\" height=\\"315\\" src=\\"https:\\/\\/www.youtube.com\\/embed\\/\'.$youtube.\'\\" frameborder=\\"0\\" allowfullscreen><\\/iframe><\\/div>\';"}',
+        'guid' => '8e1608db384c9609c5568c69a3819311',
+        'native_key' => 74,
+        'signature' => '2f6e5360bf6dedf6125046030d775440',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'youtuberesponsive',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '53f7cd7127b6262516be27e1b0d1ea14',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'cd42680538f83c217d4bae41397fe7d1',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"YoutubeResponsive","rank":0}',
+);
